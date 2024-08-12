@@ -33,3 +33,23 @@ def list_tasks():
     click.echo("ID | NAME | STATUS")
     for task in data['tasks']:
         click.echo(f"{task['id']} | {task['name']} | {task['status']}")
+
+
+# Update a task
+@click.command()
+@click.argument('id')
+@click.argument('new_name')
+def update_task(id, new_name):
+    data = load_json("tasks.json")
+
+    for task in data['tasks']:
+        if task['id'] == id:
+            task['name'] = new_name
+            task['updatedAt'] = datetime.datetime.now().isoformat()
+            break
+    
+    save_json("tasks.json", data)
+
+    click.echo("Task updated successfully!")
+
+
