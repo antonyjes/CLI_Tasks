@@ -22,4 +22,14 @@ def list_todo():
     for task in data['tasks']:
         if task['status'] == 'todo':
             click.echo(f"{task['id']} | {task['name']} | {task['status']}")
-            
+
+
+# List tasks by status done
+@click.command()
+def list_done():
+    data = load_json("tasks.json")
+
+    click.echo("ID | NAME | STATUS")
+    for task in data['tasks']:
+        if task['status'] == 'done':
+            click.echo(f"{task['id']} | {task['name']} | {task['status']}")
