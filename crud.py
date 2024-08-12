@@ -53,3 +53,17 @@ def update_task(id, new_name):
     click.echo("Task updated successfully!")
 
 
+# Delete a task
+@click.command()
+@click.argument('id')
+def delete_task(id):
+    data = load_json("tasks.json")
+
+    for task in data['tasks']:
+        if task['id'] == id:
+            data['tasks'].remove(task)
+            break
+    
+    save_json("tasks.json", data)
+
+    click.echo("Task deleted successfully!")
