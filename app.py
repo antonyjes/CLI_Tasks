@@ -1,6 +1,7 @@
 import click
 from crud import add_task, list_tasks, update_task, delete_task
 from list_by_status import list_in_progress, list_todo, list_done
+from mark_status import mark_in_progress, mark_done
 
 @click.group()
 def cli():
@@ -16,6 +17,10 @@ cli.add_command(delete_task)
 cli.add_command(list_in_progress)
 cli.add_command(list_todo)
 cli.add_command(list_done)
+
+# Commands to update task status
+cli.add_command(mark_in_progress)
+cli.add_command(mark_done)
 
 
 if __name__ == '__main__':
