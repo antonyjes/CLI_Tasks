@@ -1,0 +1,39 @@
+{
+  "tasks": [
+    {
+      "id": "d95fd092-4c72-44ef-8e3e-5184bca924d8",
+      "name": "Play videogames",
+      "status": "in-progress",
+      "createdAt": "2020-01-01T00:00:00.000Z",
+      "updatedAt": "2020-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "c56edd71-1d7c-40bb-86ba-f72bbfe7576c",
+      "name": "Buy clothes",
+      "status": "todo",
+      "createdAt": "2024-08-11T14:22:16.613739",
+      "updatedAt": "2024-08-11T14:22:16.613739"
+    },
+    {
+      "id": "d2ffd280-3e5a-4f69-a373-387dedaf5912",
+      "name": "Clean my room",
+      "status": "todo",
+      "createdAt": "2024-08-11T14:23:02.566613",
+      "updatedAt": "2024-08-11T14:23:02.566613"
+    },
+    {
+      "id": "469be6b8-1aa1-41b7-a7ad-aba0ef4f62a5",
+      "name": "Buy food",
+      "status": "todo",
+      "createdAt": "2024-08-11T18:44:30.764349",
+      "updatedAt": "2024-08-11T18:44:30.764349"
+    },
+    {
+      "id": "003e3ea4-0e47-4f26-a4c7-e615fd1c2523",
+      "name": "Go to the gym",
+      "status": "todo",
+      "createdAt": "2024-08-11T18:44:42.317828",
+      "updatedAt": "2024-08-11T18:44:42.317828"
+    }
+  ]
+}
